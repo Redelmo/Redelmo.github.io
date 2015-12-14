@@ -100,7 +100,7 @@ app.controller('cfgController', function ($scope, $location, $document) {
                 menuClose();
             } else {
                 menuOpen();
-            }
+            } 
         });  
     });
     var menu = $('#menu');
