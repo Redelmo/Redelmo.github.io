@@ -1,0 +1,18 @@
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\SASS Project.dll
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\SASS Project.pdb
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\Microsoft.Web.Infrastructure.dll
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Helpers.dll
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Mvc.dll
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Razor.dll
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Webpages.Deployment.dll
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Webpages.dll
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Webpages.Razor.dll
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Razor.xml
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Webpages.xml
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Webpages.Deployment.xml
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Webpages.Razor.xml
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Helpers.xml
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\bin\System.Web.Mvc.xml
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\obj\Debug\SASS Project.csprojResolveAssemblyReference.cache
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\obj\Debug\SASS Project.dll
+C:\AngularBootstrapSass\Bootstrap4Angular\SASS Project\obj\Debug\SASS Project.pdb

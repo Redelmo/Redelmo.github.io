@@ -1,0 +1,28 @@
+﻿<div class="container-fluid">
+    <h1 class="userInfoCardHeader" ng-click="collapse()">{{user.name}}</h1>
+    <div class="mt15 card-group row" ng-hide="collapsed" state-display="user.level user-okay user-warning user-problem user-error" >
+
+        <div class="card card-block">
+            <h4>Name:</h4>
+            {{ user.name }}
+            <br />
+            <br />
+            <div ng-show="!!user.rank">
+                Rank: {{user.rank}}
+            </div>
+            <button ng-show="!user.rank" ng-click="knightMe(user)" class="btn btn-secondary-outline">Knight Me</button>
+            <button class="btn btn-primary" ng-click="nextState()">Next State</button>
+        </div>
+        <address class="card card-block"></address>
+        <div class="card card-block">
+            <h4>Friends:</h4>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat='friend in user.friends'>{{friend}}
+                    
+                    <remove-friend method="removeFriend(friend)"></remove-friend>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>

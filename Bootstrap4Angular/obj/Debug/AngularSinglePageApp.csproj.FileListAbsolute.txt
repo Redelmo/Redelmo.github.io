@@ -1,0 +1,5 @@
+\\mm-fpvs-01\Home\arooney\My Documents\Stuff I might need\C#\AngularSinglePageApp\AngularSinglePageApp\bin\AngularSinglePageApp.dll
+\\mm-fpvs-01\Home\arooney\My Documents\Stuff I might need\C#\AngularSinglePageApp\AngularSinglePageApp\bin\AngularSinglePageApp.pdb
+\\mm-fpvs-01\Home\arooney\My Documents\Stuff I might need\C#\AngularSinglePageApp\AngularSinglePageApp\obj\Debug\AngularSinglePageApp.dll
+\\mm-fpvs-01\Home\arooney\My Documents\Stuff I might need\C#\AngularSinglePageApp\AngularSinglePageApp\obj\Debug\AngularSinglePageApp.pdb
+\\mm-fpvs-01\Home\arooney\My Documents\Stuff I might need\C#\AngularSinglePageApp\AngularSinglePageApp\obj\Debug\AngularSinglePageApp.csprojResolveAssemblyReference.cache

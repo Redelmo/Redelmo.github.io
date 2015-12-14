@@ -1,0 +1,5 @@
+$primary-color: #008b8b;
+$secondary-color: desaturate($primary-color, 30%);
+$font-color: lighten($primary-color, 70%);
+$link-color: lighten($primary-color, 50%);
+$background-color: $secondary-color;

@@ -1,0 +1,57 @@
+﻿@import '_variables.scss';
+@import '_mixins.scss';
+
+body {
+	background-color:lighten($root-color, 45%);
+@include set-font(20pt);
+	}
+
+	h1{
+    color: adjust-hue($root-color, 70deg);
+	@include set-font(0pt); 
+} 
+
+h2{
+    color: mix($root-color, $another-color);
+}
+ 
+.leadText{ 
+    color: saturate($root-color, 50%);
+}
+  
+.detailText{
+    color: darken($root-color, 30%);
+}
+
+%tile {     
+	width:$tile-size;
+	height:$tile-size;
+	margin:50px;
+}
+/* For loop */
+
+@for $i from 1 through 5 {
+	#tile#{$i} {
+	@extend %tile;
+		background-color: lighten($root-color, $i*10);
+	}
+}
+
+
+
+
+/* Each loop */
+//@each $color in $tile-colors {
+//	$i: index($tile-colors,$color);
+	//	#tile#{$i} {
+	//		@extend .tile;
+	//	background-color: $color;
+//	}
+//}
+
+@each $team, $color in $team-colors {
+.#{$team}{
+@extend %tile;
+background-color: $color;
+}
+}

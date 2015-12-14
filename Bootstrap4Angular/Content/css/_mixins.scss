@@ -1,0 +1,32 @@
+@mixin border-radius-vendor($radius){
+-webkit-border-radius:$radius;
+-moz-border-radius:$radius;
+-ms-border-radius:$radius;
+border-radius:$radius;
+}
+
+@mixin transform-vendor($transformation...){
+-webkit-transform:$transformation;
+-moz-transform:$transformation;
+-ms-transform:$transformation;
+transform:$transformation;
+}
+
+@mixin transition-vendor($transition...){
+-webkit-transition:$transition;
+-moz-transition:$transition;
+-ms-transition:$transition;
+transition:$transition;
+}
+
+@mixin max-screen-media($width) {
+	@media screen and (max-width: $width){
+		@content;
+	}
+}
+
+@mixin min-screen-media($width) {
+	@media screen and (min-width: $width){
+		@content;
+	}
+}

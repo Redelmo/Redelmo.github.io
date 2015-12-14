@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yBAAyB;EACrB,KAAM;IAAE,KAAK,EAAE,GAAG",
+"sources": ["mstyle.scss"],
+"names": [],
+"file": "mstyle.css"
+}

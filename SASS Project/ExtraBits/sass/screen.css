@@ -1,0 +1,162 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+.lead-text {
+  color: #0072ff;
+  font-weight: bold;
+  font-style: italic; }
+
+.primary-button {
+  padding: 10px 30px 10px 20px;
+  font-size: 30pt;
+  width: 200px;
+  color: white;
+  background-color: #ff6500;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
+
+.secondary-button {
+  padding: 10px 30px 10px 20px;
+  font-size: 30pt;
+  width: 200px;
+  color: white;
+  background-color: #808080; }
+
+ul.contacts {
+  background-color: green;
+  list-style-type: none;
+  padding: 0; }
+  ul.contacts li article {
+    border: solid 5px;
+    background-color: #ff5e00;
+    margin-bottom: 10px;
+    padding: 10px; }
+    ul.contacts li article header {
+      font-style: italic; }
+    ul.contacts li article p {
+      color: white; }
+
+.button, .yes, .no, .cancel {
+  color: white;
+  text-align: center;
+  font-size: 48pt;
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.yes {
+  background-color: #00ff00; }
+
+.no {
+  background-color: #ff0000; }
+
+.cancel {
+  background-color: #cec0b8; }
+
+/* visible Comment */
+.container {
+  width: 800px; }
+
+.column, .col1, .col2, .col3 {
+  width: 266.66667px;
+  float: left;
+  height: 200px; }
+
+.col1 {
+  background-color: #ffa752; }
+
+.col2 {
+  background-color: #52ff90; }
+
+.col3 {
+  background-color: #fd52ff; }
+
+nav.related li a {
+  color: red; }
+  nav.related li a:visited {
+    color: purple; }
+  nav.related li a:hover {
+    color: orange;
+    font-size: 30pt; }
+  body.logged-in nav.related li a {
+    font-style: italic; }
+
+body.logged-in .col1 {
+  background-color: pink; }
+
+article.article2 {
+  width: 300px;
+  float: left;
+  background-color: orange; }
+
+aside {
+  width: 300px;
+  float: left;
+  background-color: pink; }
+  @media screen and (max-width: 400px) {
+    aside {
+      display: none;
+      visibility: collapse; } }
+  @media screen and (max-width: 735px) {
+    aside {
+      background-color: green; } }
+
+body {
+  background-color: #e6ecf0;
+  font-size: 20pt; }
+
+h1 {
+  color: #7b5b95;
+  font-size: 5px; }
+
+h2 {
+  color: #4f744a; }
+
+.leadText {
+  color: #1f8dd1; }
+
+.detailText {
+  color: #212e36; }
+
+#tile1, #tile2, #tile3, #tile4, #tile5, .australia, .england, .sweden, .japan {
+  width: 250px;
+  height: 250px;
+  margin: 50px; }
+
+/* For loop */
+#tile1 {
+  background-color: #7798ac; }
+
+#tile2 {
+  background-color: #97b0bf; }
+
+#tile3 {
+  background-color: #b6c8d3; }
+
+#tile4 {
+  background-color: #d6e0e6; }
+
+#tile5 {
+  background-color: #f6f8f9; }
+
+/* Each loop */
+.australia {
+  background-color: #f7ad31; }
+
+.england {
+  background-color: #fff; }
+
+.sweden {
+  background-color: #ffe700; }
+
+.japan {
+  background-color: #435aad; }
+
+/*# sourceMappingURL=screen.css.map */

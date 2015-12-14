@@ -1,0 +1,39 @@
+﻿@mixin standard-button($button-bg) {
+padding: $button-padding;
+font-size: $buttonFontSize;
+width:$button-width;
+color:$button-text-color;
+background-color:$button-bg;
+}
+
+@mixin border-radius-vendor($radius){
+-webkit-border-radius:$radius;
+-moz-border-radius:$radius;
+-ms-border-radius:$radius;
+border-radius:$radius;
+}
+
+@mixin Logged-in-only {
+body.logged-in {
+	@content;
+	}
+}
+
+@mixin screen-media($width) {
+	@media screen and (max-width: $width){
+		@content;
+	}
+}
+// Allows for more than one argument to be passed into this mixin.
+@mixin shadow($shadows...){
+	box-shadow:$shadows;
+}
+
+@mixin set-font($size){
+@if $size < 5px {
+font-size:5px;
+}
+@else {
+	font-size: $size;
+	}
+} 

@@ -1,0 +1,35 @@
+﻿$col: blue;
+$primary-brand-color:#0072ff;
+$important-action-color:#ff6500;
+$secondary-action-color:#808080;
+$button-text-color:white;
+
+$base-font-size:16pt;
+$buttonFontSize:30pt;
+
+$button-width:200px;
+$button-padding:10px 30px 10px 20px; 
+
+$total-pixel-width: 1000px - 200px;
+$number-of-columns: 2 * 2 - 1;
+$col-width:$total-pixel-width / $number-of-columns;
+
+
+// Lists
+$space-delimited-list: 10px 20px 30px 40px;
+$another-space-delimited-list: 50px 60px 70px 80px;
+$comma-separated-list: #ffa752, #52ff90, #fd52ff;
+$joined: join($space-delimited-list, $another-space-delimited-list);
+$comma-separated-list: append($comma-separated-list, blue);
+
+$medium-breakpoint: 735px;
+$small-breakpoint:400px;
+
+$tile-size:250px;
+$tile-colors: blue, green, red, orange, purple;
+
+$root-color:#5b7f95;
+
+$another-color:#446a00;
+
+$team-colors: (australia: #f7ad31, england: #fff, sweden: #ffe700, japan: #435aad);

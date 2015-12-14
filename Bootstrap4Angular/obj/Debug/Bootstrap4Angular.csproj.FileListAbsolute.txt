@@ -1,0 +1,10 @@
+\\mm-fpvs-01\Home\arooney\My Documents\Stuff I might need\C#\Bootstrap4Angular\Bootstrap4Angular\bin\Bootstrap4Angular.dll
+\\mm-fpvs-01\Home\arooney\My Documents\Stuff I might need\C#\Bootstrap4Angular\Bootstrap4Angular\bin\Bootstrap4Angular.pdb
+\\mm-fpvs-01\Home\arooney\My Documents\Stuff I might need\C#\Bootstrap4Angular\Bootstrap4Angular\obj\Debug\Bootstrap4Angular.csprojResolveAssemblyReference.cache
+\\mm-fpvs-01\Home\arooney\My Documents\Stuff I might need\C#\Bootstrap4Angular\Bootstrap4Angular\obj\Debug\Bootstrap4Angular.dll
+\\mm-fpvs-01\Home\arooney\My Documents\Stuff I might need\C#\Bootstrap4Angular\Bootstrap4Angular\obj\Debug\Bootstrap4Angular.pdb
+C:\AngularBootstrapSass\Bootstrap4Angular\Bootstrap4Angular\bin\Bootstrap4Angular.dll
+C:\AngularBootstrapSass\Bootstrap4Angular\Bootstrap4Angular\bin\Bootstrap4Angular.pdb
+C:\AngularBootstrapSass\Bootstrap4Angular\Bootstrap4Angular\obj\Debug\Bootstrap4Angular.csprojResolveAssemblyReference.cache
+C:\AngularBootstrapSass\Bootstrap4Angular\Bootstrap4Angular\obj\Debug\Bootstrap4Angular.dll
+C:\AngularBootstrapSass\Bootstrap4Angular\Bootstrap4Angular\obj\Debug\Bootstrap4Angular.pdb

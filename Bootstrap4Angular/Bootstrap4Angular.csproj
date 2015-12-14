@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9709571C-0879-4A46-832B-6CBFD6D09C38}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bootstrap4Angular</RootNamespace>
+    <AssemblyName>Bootstrap4Angular</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <IsCompassProject>True</IsCompassProject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\css\bootstrap.css" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\bootstrap.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\npm.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\umd\alert.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\umd\button.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\umd\carousel.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\umd\collapse.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\umd\dropdown.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\umd\modal.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\umd\popover.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\umd\scrollspy.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\umd\tab.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\umd\tooltip.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\js\umd\util.js" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\bootstrap-flex.css">
+      <DependentUpon>bootstrap-flex.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\bootstrap-reboot.css">
+      <DependentUpon>bootstrap-reboot.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\bootstrap.css">
+      <DependentUpon>bootstrap.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\_colors.scss" />
+    <Content Include="Content\css\_mixins.scss" />
+    <Content Include="Content\css\navigation.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="Content\css\_variables.scss" />
+    <None Include="Content\css\style.scss" />
+    <None Include="Content\css\mstyle.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <Content Include="Content\css\style.css">
+      <DependentUpon>style.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\js\custom.js" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="Content\Videos\polina.mp4" />
+    <Content Include="ExtraBits\address.html" />
+    <Content Include="ExtraBits\clickModule.html" />
+    <Content Include="ExtraBits\userTile.html" />
+    <Content Include="ExtraBits\videoModule.html" />
+    <Content Include="ExtraBits\removeFriend.html" />
+    <Content Include="ExtraBits\userInfoCard.html" />
+    <Content Include="ExtraBits\index.html" />
+    <Content Include="ExtraBits\Scripts\script.js" />
+    <Content Include="guessingGame.html" />
+    <Content Include="Blog.html" />
+    <Content Include="home.html" />
+    <Content Include="about.html" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Content\Videos\polina.webm" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\css\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\dist\css\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\.csscomb.json" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\.scsslint.yml" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\bootstrap-flex.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\bootstrap-grid.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\bootstrap-reboot.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\bootstrap.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_alert.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_background-variant.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_border-radius.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_breakpoints.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_buttons.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_center-block.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_clearfix.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_forms.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_gradients.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_grid-framework.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_grid.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_hide-text.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_hover.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_image.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_label.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_list-group.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_nav-divider.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_navbar-align.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_pagination.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_progress.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_pulls.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_reset-filter.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_reset-text.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_resize.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_responsive-visibility.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_screen-reader.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_size.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_tab-focus.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_table-row.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_text-emphasis.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\mixins\_text-truncate.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_alert.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_animation.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_breadcrumb.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_button-group.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_buttons.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_card.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_carousel.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_close.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_code.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_custom-forms.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_dropdown.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_forms.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_grid.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_images.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_input-group.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_jumbotron.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_labels.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_list-group.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_media.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_mixins.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_modal.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_nav.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_navbar.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_normalize.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_pager.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_pagination.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_popover.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_print.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_progress.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_reboot.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_responsive-embed.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_tables.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_tooltip.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_type.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_utilities-responsive.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_utilities-spacing.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_utilities.scss" />
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\_variables.scss" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\scroll-section-loader.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery-ui-1.11.4.js" />
+    <Content Include="Scripts\jquery-ui-1.11.4.min.js" />
+    <Content Include="Scripts\script.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\angular-route.min.js.map" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57977/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
