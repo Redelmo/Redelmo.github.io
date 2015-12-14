@@ -101,7 +101,7 @@ app.controller('cfgController', function ($scope, $location, $document) {
             } else {
                 menuOpen();
             }
-        });
+        }); 
     });
     var menu = $('#menu');
     var page = $('#page');
