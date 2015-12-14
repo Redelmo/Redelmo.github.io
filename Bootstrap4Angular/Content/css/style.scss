@@ -1,0 +1,117 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Francois+One:400,500,800);
+@import '_mixins.scss';
+@import '_variables.scss';
+@import 'navigation.scss';
+@import 'mstyle.scss';
+
+html, body {
+    max-width: 100%;
+    overflow: hidden;
+	color:#fff;
+	font-family: $defaultFont;
+}
+
+body {
+    background-color: $background-color;
+}
+
+p {
+color: $font-color;
+line-height:2;
+font-size:18px;
+}
+
+h1 {
+color: $font-color;
+}
+
+#page {
+    padding: 40px 40px 0 40px;
+    background-color: $background-color;
+    height: 100%;
+    overflow: hidden;
+    min-width: 320px;
+	max-width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+
+	&.locabout {
+	    background-color: transparent;
+	}
+}
+
+ul {
+    list-style: none;
+}
+
+.mt15, .difficultySelect {
+    margin-top: 15px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mt35 {
+    margin-top: 35px;
+}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+	@include transform-vendor(translateX(-50%) translateY(-50%));
+    background-size: cover;
+}
+
+.guessingGame, .innerGuess, .triviaGame {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.guessTheNumberHidden, .tryAgain {
+    display: none;
+}
+
+.difficultySelect.btn.btn-info {
+    float: left;
+}
+
+.difficultySelect.btn.btn-danger, .tryAgain.btn.btn-info {
+    float: right;
+}
+
+#guessButton:disabled {
+    opacity: 1;
+    cursor: inherit;
+}
+
+.guessingGame h1, .triviaGame h1, .userInfoCardHeader {
+    text-align: center;
+}
+
+.hilight {
+    color: red;
+}
+
+.user-okay {
+    background-color: green;
+}
+
+.user-warning {
+    background-color: yellow;
+}
+
+.user-problem {
+    background-color: orange;
+}
+
+.user-error {
+    background-color: red;
+}

@@ -1,0 +1,35 @@
+﻿<div class="row">
+    <div class="col-md-3 guessingGame">
+        <h1 class="mt15 header">Guessing Game</h1>
+
+        <div class="innerGuess">
+            <button class="difficultySelect btn btn-info" ng-click="easy()">Easy Mode</button>
+            <button class="difficultySelect btn btn-danger" ng-click="hard()">Hard Mode</button>
+
+            <p class="guessTheNumberHidden helpfulMessage">Guess the number between 1 and {{difficultyRange}}</p>
+            <input id="guessInput" class="guessTheNumberHidden" type="text" ng-model="guess" />
+            <button id="guessButton" ng-click="submitGuess(); textShow = 1; attempts = attempts + 1" class="guessTheNumberHidden btn btn-primary">Guess!</button>
+            <button ng-click="reset()" class="tryAgain btn btn-info">Play Again?</button>
+            <br />
+            <p class="mt15" ng-show="textShow == 1">Your guess is {{result}}</p>
+            <p class="helpfulMessage" ng-show="attempts > 0">You have tried {{attempts}} time(s).</p>
+            <p class="tryAgain">You did it in {{attempts}} attempt(s).</p>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="row mt35">
+    <div class="col-md-3 triviaGame">
+        <h1 class="mt15 header">Trivia</h1>
+        <div>
+            <p>The dog says
+                <input class="questionOne" ng-model="dogWoof" /></p>
+            <p>The cat says
+                <input class="questionTwo" ng-model="catMeow" /></p>
+
+            <button class="triviaSubmit btn btn-info" ng-click="submitTrivia()">Submit</button>
+        </div>
+    </div>
+</div>

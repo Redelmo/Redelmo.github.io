@@ -1,0 +1,155 @@
+﻿@import '_variables.scss';
+@import '_mixins.scss';
+
+.lead-text {
+	color:$primary-brand-color;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.primary-button {
+	@include standard-button($important-action-color);
+	@include border-radius-vendor(20px);
+}
+
+.secondary-button {
+	@include standard-button($secondary-action-color);
+}
+
+ul.contacts { 
+	background-color:green;
+	list-style-type:none;
+	padding:0; 
+	li {
+		article {
+			border:solid 5px;
+			background-color:#ff5e00;
+
+			margin-bottom:10px;
+			padding: 10px;
+
+			header {
+				font-style:italic;
+			}
+
+			p {
+				color:white;
+			}
+		}
+	}
+}
+
+.button {
+	color:white;
+	text-align:center;
+	font-size:48pt;
+	width:200px;
+	height:100px;
+	line-height:100px;
+	@include border-radius-vendor(10px);
+
+}
+
+.yes {
+	@extend .button;
+	background-color:#00ff00;
+}
+
+.no {
+	@extend .button;
+	background-color:#ff0000;
+}
+
+.cancel {
+	@extend .button;
+	background-color:#cec0b8;
+}
+
+/* visible Comment */
+// Invisible comment 
+
+.container {
+	width: $total-pixel-width;
+}
+
+.column {
+	width:$col-width;
+	float:left;
+	height: (400px / 2);
+// Make sure you surround in brackets to tell SASS to do a division.
+}
+
+.col1 {
+	@extend .column;
+	background-color:nth($comma-separated-list, 1);
+}
+
+.col2 {
+	@extend .column;
+	background-color:nth($comma-separated-list, 2);
+}
+.col3 {
+	@extend .column;
+	background-color:nth($comma-separated-list, 3);
+}
+
+nav.related li a {
+	color: red;
+	&:visited {
+		color:purple;
+	}
+	&:hover {
+		color:orange;
+		font-size:30pt;
+	}
+
+	// & being this specific selecter, aka "nav.related li a"
+	body.logged-in & {
+		font-style:italic;
+	}
+}
+
+
+@include Logged-in-only {
+
+	.col1 {
+		background-color:pink;
+	}
+}
+
+article.article2 {
+	width:300px;
+	float:left;
+	background-color:orange;
+}
+
+aside {
+	width:300px;
+	float:left;
+	background-color:pink;
+	@include screen-media($small-breakpoint){
+		display:none;
+		visibility:collapse;
+	}
+	@include screen-media($medium-breakpoint){
+		background-color:green;
+	}
+}
+
+//.tile {
+//	width:$tile-size;
+//	height:$tile-size;
+//	margin:50px;
+//}
+
+//#tile1 {
+//	@extend .tile;
+//	background-color: red;
+//	@include shadow(10px 10px 5px black);
+//}
+
+//#tile2 {
+	//@extend .tile;
+	//background-color:violet;
+//	@include shadow(10px 10px 5px black, -10px -10px 10px 5px purple);
+//}

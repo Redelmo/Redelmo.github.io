@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Extra Bits Video Module</title>
+
+    <script src="/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="/Content/bootstrap-4.0.0-alpha/dist/js/bootstrap.min.js"></script>
+    <link href="/Content/bootstrap-4.0.0-alpha/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="/Scripts/angular.min.js"></script>
+    <script src="/Scripts/angular-route.min.js"></script>
+    <link href="/Content/css/style.css" rel="stylesheet" />
+    <link href="/Content/css/mstyle.css" rel="stylesheet" />
+    <script src="Scripts/script.js"></script>
+</head>
+
+
+
+<body ng-controller="videoCtrl" class="container-fluid">
+
+
+    <video id="vid" spacebar-support event-pause="handlePause(evt)" controls preload="none" poster="http://weknowyourdreams.com/image.php?pic=/images/kitten/kitten-03.jpg">
+        <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4" />
+        <source src="http://media.w3.org/2010/05/sintel/trailer.webm5" type="video/webm" />
+        <source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg" />
+    </video>
+    <div ng-repeat="message in messages">{{message.text}}</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam Rooney</title>
+
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="Content/bootstrap-4.0.0-alpha/dist/js/bootstrap.min.js"></script>
+    <link href="Content/bootstrap-4.0.0-alpha/scss/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/script.js"></script>
+    <link href="Content/css/style.css" rel="stylesheet" />
+    <script src="Content/js/custom.js"></script>
+</head>
+<body ng-app="Bootstrap4Angular">
+
+    <div class="container-fluid" ng-controller="cfgController">
+        <div class="" id="navigation">
+            <div class="row">
+                <div id="nav-icon2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <nav>
+                    <ul id="menu" class="footerList">
+
+                        <li class=""><a href="#/home" data-hover="Home">Home</a></li>
+                        <li><a href="#/about" data-hover="About Me">About Me</a></li>
+                        <li><a href="#/blog" data-hover="Blog">Blog</a></li>
+
+                        <li><a href="#" data-hover="About Us">About Us</a></li>
+                        <li><a href="#" data-hover="Blog">Blog</a></li>
+                        <li><a href="#" data-hover="Services">Services</a></li>
+
+                        <li class=""><a href="http://www.Facebook.com" target="_blank" data-hover="Facebook">Facebook</a></li>
+                        <li><a href="http://www.linkedin.com" target="_blank" data-hover="LinkedIn">LinkedIn</a></li>
+                        <li><a href="mailto:adamrooney1990@gmail.com" target="_blank" data-hover="Email Me">Email Me</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+        <div id="page" class="">
+            <div ng-view>
+                <!--
+                    This DIV loads templates depending upon route.
+                    -->
+            </div>
+        </div>
+        <div id="footer">
+            <div class="row">
+                <div id="footerOne" class="col-xs-4">
+                    <ul class="footerList">
+                        <li data-hover="Navigation">Navigation</li>
+                        <li class=""><a href="#/home" data-hover="Home">Home</a></li>
+                        <li><a href="#/about" data-hover="About Me">About Me</a></li>
+                        <li><a href="#/blog" data-hover="Blog">Blog</a></li>
+
+                    </ul>
+                </div>
+                <div id="footerTwo" class="col-xs-4">
+                    <ul class="footerList">
+                        <li class="" data-hover="Some Title">Some Title</li>
+                        <li><a href="#" data-hover="About Us">About Us</a></li>
+                        <li><a href="#" data-hover="Blog">Blog</a></li>
+                        <li><a href="#" data-hover="Services">Services</a></li>
+                    </ul>
+                </div>
+                <div id="footerThree" class="col-xs-4">
+                    <ul class="footerList">
+                        <li>Contact Me</li>
+                        <li class=""><a href="http://www.Facebook.com" target="_blank" data-hover="Facebook">Facebook</a></li>
+                        <li><a href="http://www.linkedin.com" target="_blank" data-hover="LinkedIn">LinkedIn</a></li>
+                        <li><a href="mailto:adamrooney1990@gmail.com" target="_blank" data-hover="Email Me">Email Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
