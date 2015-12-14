@@ -162,6 +162,10 @@
 		  left:0;
 		}
 
+		&:focus {
+		outline:none;
+		}
+
 		&:before {
 		  bottom: 0;
 		  display: block;

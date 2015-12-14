@@ -140,6 +140,8 @@
       -webkit-transition: all 0.35s ease;
       transition: all 0.35s ease;
       left: 0; }
+    .footerList a:focus {
+      outline: none; }
     .footerList a:before {
       bottom: 0;
       display: block;
@@ -259,5 +261,10 @@ video#bgvid {
 
 .user-error {
   background-color: red; }
+
+#MainContentContainerHome {
+  justify-content: center;
+  align-content: center;
+  min-height: 736px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,6 +21,7 @@ app.config(function ($routeProvider) {
       });
 });
 
+
 app.controller('cfgController', function ($scope, $location, $document) {
 
 
@@ -87,11 +88,28 @@ app.controller('cfgController', function ($scope, $location, $document) {
             return '75%';
         }
     };
+    
+    var calculateContainerHeight = customJavaScriptHelpers.debounce(function () {
+        var pageHeight;
+        if (isDesktop()) {
+             pageHeight = $(document).height() - 230;
+        } else {
+             pageHeight = $(document).height();
+        }
+        $('#MainContentContainerHome').css('min-height', pageHeight);
+    }, 50, 'immediate');
 
     $(window).resize(function () {
         if ($('html').hasClass('navActive')) {
             page.animate({ 'padding-left': mobileNavigation() }, 600, 'easeInOutBack');
         }
+        
+        calculateContainerHeight();
+        
+    });
+
+    $(window).load(function () {
+        calculateContainerHeight();
     });
 
     $(function () {
@@ -191,6 +209,9 @@ app.controller('cfgController', function ($scope, $location, $document) {
             }
         });
     });
+
+
+
 
 
     /*     
