@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <IsCompassProject>True</IsCompassProject>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -83,6 +84,12 @@
     <Content Include="Content\bootstrap-4.0.0-alpha\scss\bootstrap.css">
       <DependentUpon>bootstrap.scss</DependentUpon>
     </Content>
+    <Content Include="Content\bootstrap-4.0.0-alpha\scss\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
     <Content Include="Content\css\_colors.scss" />
     <Content Include="Content\css\_mixins.scss" />
     <Content Include="Content\css\navigation.scss">
@@ -94,6 +101,10 @@
       <DebugInfo>False</DebugInfo>
     </Content>
     <Content Include="Content\css\_variables.scss" />
+    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
     <None Include="Content\css\style.scss" />
     <None Include="Content\css\mstyle.scss">
       <Compile>False</Compile>
