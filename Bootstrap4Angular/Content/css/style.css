@@ -1,8 +1,7 @@
-﻿@import url(https://fonts.googleapis.com/css?family=Francois+One:400,500,800);
+@import url(https://fonts.googleapis.com/css?family=Francois+One:400,500,800);
 @media (min-width: 734px) {
   #navigation {
     display: none; } }
-
 #navigation #nav-icon2 {
   width: 60px;
   height: 45px;
@@ -267,4 +266,7 @@ video#bgvid {
   justify-content: center;
   align-content: center;
   min-height: 736px; }
+  #MainContentContainerHome h4 {
+    color: #002525; }
 
+/*# sourceMappingURL=style.css.map */

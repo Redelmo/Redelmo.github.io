@@ -88,14 +88,9 @@ app.controller('cfgController', function ($scope, $location, $document) {
             return '75%';
         }
     };
-    
+
     var calculateContainerHeight = customJavaScriptHelpers.debounce(function () {
-        var pageHeight;
-        if (isDesktop()) {
-             pageHeight = $(document).height() - 230;
-        } else {
-             pageHeight = $(document).height();
-        }
+        var pageHeight = $(document).height() - 230;
         $('#MainContentContainerHome').css('min-height', pageHeight);
     }, 50, 'immediate');
 
@@ -103,9 +98,7 @@ app.controller('cfgController', function ($scope, $location, $document) {
         if ($('html').hasClass('navActive')) {
             page.animate({ 'padding-left': mobileNavigation() }, 600, 'easeInOutBack');
         }
-        
         calculateContainerHeight();
-        
     });
 
     $(window).load(function () {
@@ -118,8 +111,8 @@ app.controller('cfgController', function ($scope, $location, $document) {
                 menuClose();
             } else {
                 menuOpen();
-            } 
-        });  
+            }
+        });
     });
     var menu = $('#menu');
     var page = $('#page');
@@ -135,37 +128,34 @@ app.controller('cfgController', function ($scope, $location, $document) {
         }
     };
 
-    var menuOpen = function() {
+    var menuOpen = function () {
         menu.animate({ left: 0 }, 500, 'easeInOutQuart');
         menu.toggleClass('active');
-        setTimeout(function() { $('html').toggleClass('navActive'); }, 300);
+        setTimeout(function () { $('html').toggleClass('navActive'); }, 300);
         page.animate({ 'padding-left': mobileNavigation() }, 600, 'easeInOutBack');
     };
-    
 
-    menu.on('click', function(e) {
+
+    menu.on('click', function (e) {
         e.stopPropagation();
     });
 
-    var closeMenuOnHtmlClick = function () {
-        $(document).on('click', '.navActive', function () {
-            if (menu.hasClass('active')) {
-                menuClose(1);
-            }
-        });
-    }();
+    $(document).on('click', '.navActive', function () {
+        if (menu.hasClass('active')) {
+            menuClose(1);
+        }
+    });
 
     $scope.submitTrivia = function () {
         var questionOneAnswer = ["Woof", "woof"];
         var questionTwoAnswer = ["Meow", "meow"];
         $(/.question/).removeClass(/btn/);
-        if (questionOneAnswer.indexOf($('.questionOne').val()) !== -1)
-        {
+        if (questionOneAnswer.indexOf($('.questionOne').val()) !== -1) {
             $('.questionOne').addClass('btn-success');
         } else {
             $('.questionOne').addClass('btn-danger');
         }
-        if (questionTwoAnswer.indexOf($('.questionTwo').val()) !== -1){
+        if (questionTwoAnswer.indexOf($('.questionTwo').val()) !== -1) {
             $('.questionTwo').addClass('btn-success');
         } else {
             $('.questionTwo').addClass('btn-danger');
