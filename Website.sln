@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap4Angular", "Bootstrap4Angular\Bootstrap4Angular.csproj", "{9709571C-0879-4A46-832B-6CBFD6D09C38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdamsSite", "Bootstrap4Angular\AdamsSite.csproj", "{9709571C-0879-4A46-832B-6CBFD6D09C38}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SASS Project", "SASS Project\SASS Project.csproj", "{36C184ED-8EE6-4228-AE39-1435F97D7739}"
 EndProject
