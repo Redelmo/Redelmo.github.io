@@ -120,4 +120,7 @@ video#bgvid {
 justify-content:center;
 align-content:center;
 min-height:736px;
+	h4 {
+	color:darken($primary-color, 20%);
+	}
 }
